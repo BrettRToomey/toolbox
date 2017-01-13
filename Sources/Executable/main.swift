@@ -23,6 +23,7 @@ do {
         Test(console: terminal),
         Xcode(console: terminal),
         Version(console: terminal, version: version),
+        TestFix(console: terminal),
         Group(id: "self", commands: [
             SelfInstall(console: terminal, executable: executable, version: version),
             SelfUpdate(console: terminal, executable: executable),
