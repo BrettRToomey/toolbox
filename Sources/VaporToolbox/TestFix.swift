@@ -26,11 +26,11 @@ public final class TestFix: Command {
             return
         }
         
-        let startTime = CFAbsoluteTimeGetCurrent()
+        //let startTime = CFAbsoluteTimeGetCurrent()
         let tests = try files.map { try TestParser.parse(TestFile(url: $0)) }
-        let endTime = CFAbsoluteTimeGetCurrent()
+        //let endTime = CFAbsoluteTimeGetCurrent()
         
-        print("total time: \(endTime - startTime)")
+        //print("total time: \(endTime - startTime)")
         
         guard let linuxMainURLUnwrapped = linuxMainURL else {
             console.error("Missing Tests/LinuxMain.swift")
