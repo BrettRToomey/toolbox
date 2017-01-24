@@ -23,7 +23,7 @@ public final class TestFix: Command {
         guard files.count > 0 else {
             console.print("Couldn't find any test files.")
             console.print("Please make sure that you're in the project root or in /Tests")
-            return
+            exit(3)
         }
         
         //let startTime = CFAbsoluteTimeGetCurrent()
